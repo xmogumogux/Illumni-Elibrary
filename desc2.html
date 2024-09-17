@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+/* ------- BACKGROUND -------- */
+body {
+	background-image: url('bg2.jpg');
+	background-size: cover;
+	background-position: center -130px;
+	background-attachment: scroll; 
+	background-repeat: no-repeat;
+}
+/* ------- BACKGROUND -------- */
+
+
+
+
+/* ------- HEADBAR -------- */
+ul {
+	list-style-type: none;
+	padding: 0;
+	width: 99%;
+	margin: 3px;
+	z-index: 1000;
+	overflow: hidden;
+	background-color: #FED8B1;
+	border: 1px solid #FED8B1; 
+	border-radius: 10px;
+	position: absolute;
+	top: 7px;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+a:hover {
+  background-color: #A67B5B;
+  color: white
+}
+/* ------- END OF HEAD BAR -------- */
+
+
+
+
+/* ------- BOOKCOVER -------- */
+.bookimg {
+	position: fixed;
+	left: 12%;
+	top: 15%;
+}
+/* ------- END OF BOOKCOVER -------- */
+
+
+
+
+/* ------- CONTAINER -------- */
+.container {
+	position: fixed; 
+    top: 145px;
+	left: 60%;
+	transform: translateX(-50%);
+    width: 35%; 
+    height: 698px;
+    overflow: auto; 
+    padding: 10px; 
+	background-color: white;
+	border: 1px dashed yellow;
+	border-radius: 25px;
+}
+/* ------- END OF CONTAINER -------- */
+
+
+
+
+
+/* ------- BUTTON -------- */
+.button {
+	font-size: 30px; 
+	color: white;
+	background-color: #a6d8e8; 
+	text-decoration: none;
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	padding-right: 80px; 
+	padding-left: 80px;
+	border: 0px solid purple;
+	border-radius: 20px;
+	position: fixed;
+	float: right;
+	left: 85%;
+	top: 80px;
+	transition: transform .2s;
+}
+
+.button:hover {
+	background-color: #dbc65d;
+	color: white;
+	transform: scale(1.05);
+}
+/* ------- END OF BUTTON -------- */
+
+
+
+/* ------- BUTTON2 -------- */
+.button2 {
+	font-size: 30px; 
+	color: white;
+	background-color: #FFC96F; 
+	text-decoration: none;
+	padding-top: 25px; 
+	padding-bottom: 25px; 
+	padding-right: 150px; 
+	padding-left: 150px;
+	border: 0px solid purple;
+	border-radius: 20px;
+	position: fixed;
+	float: right;
+	left: 45%;
+	top: 560px;
+	transition: transform .2s;
+}
+
+.button2:hover {
+	background-color: #a6d8e8;
+	color: white;
+	transform: scale(1.05);
+}
+/* ------- END OF BUTTON2 -------- */
+
+
+
+
+/* ------- LOGO -------- */
+.logo {
+	position: fixed;
+	top: 14.3px;
+	float: top;
+	left: 50px;
+	z-index: 999999;
+	width: 150px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+/* ------- END OF LOGO -------- */
+
+
+
+
+/* ------- OTHER CLASS -------- */
+* {
+ color: #52575D;
+}
+p, hr {
+	position: relative;
+	top: -90px
+}
+h1 {
+	font-size: 80px;
+	top: -50px;
+	position: relative;
+	color: #52575D;
+}
+.quote {
+	font-size: 32px;
+	top: -15px;
+	position: relative;
+}
+.description {
+	font-size: 20px;
+	top: -30px;
+	left: 10px;
+	position: relative;
+}
+.kinemerut {
+	font-size: 20px;
+	top: -30px;
+	left: 10px;
+	line-height: 0.5;
+	position: relative;
+}
+/* ------- END OF OTHER CLASS -------- */
+
+
+</style>
+</head>
+<body>
+
+
+<!-- LOGO -->
+<img src="logo.jpg" class="logo">
+<!-- LOGO -->
+
+
+<!-- HEADBAR -->
+	<ul style="position: fixed">
+		<li style="float: right;"><a href="#settings">Settings</a></li>
+		<li>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎‎ ‎ ‎</li>
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="help.html">Help</a></li>
+	</ul>
+<!-- HEADBAR -->
+
+
+<!-- BOOKCOVER -->
+<div class="bookimg">
+	<img src="b2.png" width="500px">
+</div>
+<!-- BOOKCOVER -->
+
+
+<!-- CONTAINER -->
+<div class="container">
+		<h1> The Valkyrie Girls </h1>
+	<div class="quote">
+		<p> "The Heroes of Starksvile" </p>
+	</div>
+	<div class="description">
+		<p> The city of Starkville is in trouble! Luckily, The Vixen Girls are here ready to save the day. But, how could they do it if half of the town is destroyed? </p>
+	</div>
+	<div class="kinemerut">
+		<p> ------------------------------------------------------------------------------------------------ </p>
+		<p><b>Author:</b> Group 10-Patience </p>
+		<p><b>Genre:</b> Fictional </p>
+		<p><b>Date Published:</b> 09/15/2024 </p>
+		<p><b>Status:</b> Most Reads</p>
+		<p> ------------------------------------------------------------------------------------------------ </p>
+	</div>
+</div>
+<!-- CONTAINER -->
+
+
+<!-- READ BUTTON -->
+<center>
+	
+	<a href="https://online.fliphtml5.com/buncb/ibmw/" class="button2"><b> Start Your Imagination </b> <a>
+<center>
+<!-- BUTTON -->
+
+
+
+<!-- EXIT BUTTON -->
+<center>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<a href="shelf2.html" class="button"> Go back <a>
+<center>
+<!-- BUTTON -->
+
+</body>
+</html>

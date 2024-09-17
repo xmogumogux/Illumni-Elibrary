@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+/* ------- BACKGROUND AND BG 2-------- */
+body {
+	background-color: white;
+}
+
+.headlineimg {
+	width: 99%;
+	height: 300px; 
+	padding: 20px;
+	box-sizing: border-box; 
+	background-image: url('headlineimg22.png');
+	background-size: 100% auto;
+	background-position: center -600px;
+	background-attachment: scroll; 
+	background-repeat: no-repeat;
+	position: fixed;
+}
+
+.headline2 {
+	width: 100%;
+	height: 810px; 
+	padding: 20px;
+	box-sizing: border-box; 
+	background-color: #fffaed;
+	position: fixed;
+	top: 1260px;
+	left: -0.1px
+}
+/* ------- BACKGROUND AND BG 2 -------- */
+
+
+
+
+/* ------- OTHER CLASS -------- */
+.textbox {
+	color: black;
+	background-color: white;
+	border: 5px dashed #ce6873;
+	border-radius: 30px;
+	line-height: 1.2;
+	text-align: center;
+	font-size: 30px;
+	padding: 50px;
+	position: relative;
+	max-width: 1300px;
+	margin: 0 auto;
+	left: 10.5%
+}
+
+.special {
+	line-height: 0.85;
+}
+
+.txtbox1 {
+	position: absolute;
+	top: 400px;
+}
+.txtbox2 {
+	position: absolute;
+	top: 1350px;
+}
+.txtbox3 {
+	position: absolute;
+	top: 2150px;
+}
+
+.how {
+	border: 2px solid #95bfff;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #95bfff;
+	border-left: 50px;
+	border-right: 50px;
+	line-height: 0.3;
+	color: white;
+	font-size: 30px;
+	top: 250px;
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.contact {
+	border: 2px solid #95bfff;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #95bfff;
+	border-left: 50px;
+	border-right: 50px;
+	line-height: 0.3;
+	color: white;
+	font-size: 30px;
+	top: 1100px;
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.faq {
+	border: 2px solid #95bfff;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #95bfff;
+	border-left: 50px;
+	border-right: 50px;
+	line-height: 0.3;
+	color: white;
+	font-size: 30px;
+	top: 1800px;
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+}
+/* ------- END OF OTHER CLASS -------- */
+
+
+
+
+/* ------- HEADBAR -------- */
+ul {
+	list-style-type: none;
+	padding: 0;
+	width: 99%;
+	margin: 3px;
+	z-index: 1000;
+	overflow: hidden;
+	background-color: #FED8B1;
+	border: 1px solid #FED8B1; 
+	border-radius: 10px;
+	position: absolute;
+	top: 7px;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+a:hover {
+  background-color: #A67B5B;
+  color: white
+}
+/* ------- END OF HEAD BAR -------- */
+
+
+
+/* ------- CONTAINER -------- */
+.container {
+	position: absolute; 
+    top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+    width: 90%; 
+    height: 2700px;
+    overflow: auto; 
+    padding: 10px; 
+	border-radius: 25px;
+	background-color: #f2ebd6;
+}
+/* ------- END OF CONTAINER -------- */
+
+
+
+/* ------- LOGO -------- */
+.logo {
+	position: fixed;
+	top: 14.3px;
+	float: top;
+	left: 50px;
+	z-index: 999999;
+	width: 150px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+/* ------- END OF LOGO -------- */
+
+
+</style>
+</head>
+<body>
+
+
+<!-- LOGO -->
+<img src="logo.jpg" class="logo">
+<!-- LOGO -->
+
+
+<!-- HEADBAR -->
+	<ul style="position: fixed">
+		<li style="float: right;"><a href="#settings">Settings</a></li>
+		<li>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎‎ ‎ ‎</li>
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="help.html">Help</a></li>
+	</ul>
+<!-- HEADBAR -->
+
+
+<!-- CONTENT -->
+<div class="container">
+	<div class="headlineimg"></div>
+	<div class="headline2"></div>
+	<div class="headline2 headline3"></div>
+	
+	<!-- about us -->
+	<div class="how">
+		<h1> How to use Illumni </h1>
+	</div>
+	<div class="txtbox1 textbox"><p>First is go to our homepage, this is where you can locate different categories you can visit. Simply click them to proceed</p>
+	<p> After Clicking a category, you will be sent to our bookshelf that has the corresponding books, related to the category you picked.</p>
+	<p> Scroll down to find different selection of books we have in the bookshelf and click a book you want to read.</p>
+	<p> After choosing a book, you will be sent to the description page of the book where it has the title, author, short description, its genre, date, and etc.</p>
+	<p> Simply click "Start your imagination" to start reading the book.</p>
+	<p> for every webpages you visit, there will be a "go back" button on the corner right of your screen. This allows you to go back to the previous page you were on.</p>
+	</div>
+	
+	
+	<!-- mission -->
+	<div class="contact">
+		<h1> How to contact us </h1>
+	</div>
+	<div class="txtbox2 textbox">
+		<p> Our website is still in beta testing. You should experience some bugs or errors. To avoid this, feel free to contact us. We will make sure that every user can experience a smooth and enjoyable time using our website.</p>
+		<p style="text-align: left; font-weight: bold;"> Our Contact info:</p>
+		<p style="text-align: left;"> Number: 0909-8234-7892</p>
+		<p style="text-align: left;">Email Adress: illumniebooks@yahoo.com </p>
+		<p style="text-align: left;">Instagram and Facebook: @Illumni_Ebooks </p>
+		<p> </p>
+		<p> </p>
+		<p> </p>
+		<p> </p>
+		<p> </p>
+		<p> </p>
+		
+	</div>
+	<!-- mission -->
+	
+	
+	<!-- vision -->
+	<div class="faq">
+		<h1> FAQ'S </h1>
+	</div>
+	<div class="txtbox3 textbox">
+		<p><b> 1) Are all books free and downloadable?</b> | Yes, we aim that every user will have acess to reading for free. The downloadable feature is still in progress so stay tuned! :D</p>
+
+<p><b>2) What makes you unique?</b> | Our E-library focuses on a child friendly platform that is accessible for free. Not many children have the money or access to a library which is why we planned to make this project to fulfill our goal. That is where our E-library shines.</p>
+
+<p><b>3) How could I publish my own book here?</b> | Inquire our team for a premission to submit a book you have. We will first analyze if your book is safe to publish in our website before publishing it here :) </p>
+
+<p><b>5) How can I ensure these books are safe for my children?</b> | We make sure every book that the books we publish in our E-Library is carefully analyzed. We make sure that there will be no harmful contents for our children to see.</p>
+	</div>
+	<!-- vision -->
+	
+</div>
+<!-- CONTENT -->
+
+</body>
+</html>

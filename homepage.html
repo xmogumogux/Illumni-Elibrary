@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+/* ------- BACKGROUND -------- */
+body {
+	background-image: url('bg2.jpg');
+	background-size: cover;
+	background-position: center -130px;
+	background-attachment: scroll; 
+	background-repeat: no-repeat;
+}
+/* ------- BACKGROUND -------- */
+
+
+
+
+/* ------- HEADBAR -------- */
+ul {
+	list-style-type: none;
+	padding: 0;
+	width: 99%;
+	margin: 3px;
+	z-index: 1000;
+	overflow: hidden;
+	background-color: #FED8B1;
+	border: 1px solid #FED8B1; 
+	border-radius: 10px;
+	position: absolute;
+	top: 7px;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+a:hover {
+  background-color: #A67B5B;
+  color: white
+}
+/* ------- END OF HEAD BAR -------- */
+
+
+
+
+/* ------- LOGO -------- */
+.logo {
+	position: absolute;
+	top: 14.3px;
+	float: top;
+	left: 50px;
+	z-index: 999999;
+	width: 150px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+/* ------- END OF LOGO -------- */
+
+
+
+
+/* ------ OVERLY COMPLICATED INTERACTIVE BOX ----- */
+.container {
+	width: 40%;
+    height: 70%;
+	Left: 50%;
+	transform: translateX(-50%);
+	top: 15%;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	overflow: hidden;
+	position: fixed;
+	background-color: #f2ebd6;
+}
+.page {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: none;
+	}
+	
+.page.active {
+	display: block;
+	}
+	
+.clickable { 
+	position: fixed;
+	Left: 24%;
+	text-decoration: none;
+	top: 10%;
+	transition: transform .3s;
+}
+
+.clickable:hover {
+	transform: scale(1.1);
+}
+
+.prev {
+	position: fixed;
+	left: 20%;
+	transform: translateX(-40%);
+
+	top: 48%;
+	padding: 20px 50px;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	transition: transform .5s;
+	border: none
+}
+
+.prev:hover {
+	transform: scale(1.5);
+	transform: translateX(-50%);
+
+}
+
+.next {
+	position: fixed;
+	left: 76%;
+	transform: translateX(-40%);
+	top: 48%;
+	padding: 20px 50px;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	transition: transform .5s;
+	border: none;
+}
+
+.next:hover {
+	transform: scale(1.1);
+		transform: translateX(-25%);
+}
+
+.special: {
+	color: black;
+}
+
+.special:hover {
+	background-color: transparent;
+	color: black;
+}
+
+.essay {
+	font-size: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: fixed;
+	top: 70%;
+	background-color: white;
+	padding: 10px 200px;
+	border-radius: 80px;
+	color:black;
+	text-align: center;
+	font-family: cursive;
+}
+
+.fantasy {
+	font-size: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: fixed;
+	top: 70%;
+	background-color: white;
+	padding: 10px 200px;
+	border-radius: 80px;
+	color:black;
+	text-align: center;
+	font-family: helvetica;
+	font-weight: bold;
+	}
+
+.horror {
+	font-size: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: fixed;
+	top: 70%;
+	background-color: white;
+	padding: 10px 200px;
+	border-radius: 80px;
+	color:black;
+	text-align: center;
+	font-family: sans;
+	font-weight: bold;
+	}
+	
+.religious {
+	font-size: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: fixed;
+	top: 70%;
+	background-color: white;
+	padding: 10px 200px;
+	border-radius: 80px;
+	color:black;
+	text-align: center;
+	font-family: helvetica;
+	}
+	
+img {
+ border-radius: 200px;
+}
+
+/* ------ OVERLY COMPLICATED INTERACTIVE BOX ----- */
+
+
+
+</style>
+</head>
+<body>
+
+
+<!-- LOGO -->
+<img src="logo.jpg" class="logo">
+<!-- LOGO -->
+
+
+<!-- HEADBAR -->
+		<ul style="position: fixed">
+		<li style="float: right;"><a href="#settings">Settings</a></li>
+		<li>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎‎ ‎ ‎</li>
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="help.html">Help</a></li>
+	</ul>
+<!-- HEADBAR -->
+
+
+<!-- CONTENT -->
+<div class="container">
+	<div class="page" id="page1">
+	<div class="clickable"><a href="shelf.html" class="special"><img src="essay.png" width="400px" style="background-color: white"></div>
+	<h1 class="essay">Essay</h1>
+	</a>
+	</div>
+	<div class="page" id="page2">
+	<div class="clickable"><a href="shelf2.html" class="special"><img src="fiction.png" width="400px" style="background-color: white"></div>
+	<h1 class="fantasy"> Fantasy </h1>
+	</a>
+	</div>
+	<div class="page" id="page3">
+	<div class="clickable"><img src="horror.png" width="400px" id="horror"></div>
+	<h1 id="clickableImage" class="horror"> Horror </h1>
+	</div>
+	<div class="page" id="page4">
+	<div class="clickable"><img src="christian.png" width="400px" id="christian"></div>
+	<h1 id="clickableImage" class="religious"> Religious Books </h1>
+	</div>
+
+</div>
+	<button id="prev" class="prev">Previous</button>
+	<button id="next" class="next">Next</button>
+
+<script>
+	let currentPage = 0;
+	const pages = document.querySelectorAll('.page');
+	pages[currentPage].style.display = 'block';
+
+	document.getElementById('next').addEventListener('click', () => {
+	if (currentPage < pages.length - 1) {
+	pages[currentPage].style.display = 'none';
+	currentPage++;
+	pages[currentPage].style.display = 'block';
+	}
+	});
+
+	document.getElementById('prev').addEventListener('click', () => {
+	if (currentPage > 0) {
+	pages[currentPage].style.display = 'none';
+	currentPage--;
+	pages[currentPage].style.display = 'block';
+	}
+	});
+	document.getElementById('horror').addEventListener('click', function() {
+	alert('Category not yet finished :('); 
+	});
+	document.getElementById('christian').addEventListener('click', function() {
+	alert('Category not yet finished :('); 
+	});
+	document.getElementById('').addEventListener('click', function() {
+	alert('Category not yet finished :('); 
+	});
+</script>
+<!-- CONTENT -->
+
+</body>
+</html>

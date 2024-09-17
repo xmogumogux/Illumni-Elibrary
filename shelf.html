@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+html, body {
+	margin: 0;
+
+}
+
+
+
+/* ------- BOOKSHELF AND BG -------- */
+.background {
+	width: 100%;
+	height: 1600px; 
+	padding: 20px;
+	box-sizing: border-box; 
+	background-image: url('bg2.jpg');
+	background-size: cover;
+	background-position: -700px;
+	background-attachment: scroll; 
+	background-repeat: no-repeat;
+}
+.container {
+	position: fixed; 
+	top: 60px;
+	width: 100%; 
+	height: 880px;
+	overflow: auto; 
+	padding: 10px; 
+}
+.shelf {
+	position: relative;
+	background-image: url('shelf.png');
+	background-size: cover;
+	height: 1400px; /* Height of the shelf */
+	width: 71%;
+	background-repeat: no-repeat;
+	top: 50px;
+}
+/* ------- END OFBOOKSHELF AND BG -------- */
+
+
+
+
+/* ------- HEADBAR -------- */
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 10px;
+	border-bottom: 2px solid;
+	width: 99%;
+	z-index: 1000;
+	overflow: hidden;
+	background-color: #FED8B1;
+	border: 1px solid #FED8B1; 
+	border-radius: 10px;
+	Position: Fixed;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: grey;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none
+}
+
+li a:hover {
+	background-color: #A67B5B;
+	color:white;
+}
+/* ------- END OF HEAD BAR -------- */
+
+
+
+
+
+/* ------- BOOKS PROPERTIES -------- */
+.book1 {
+	position: absolute;
+	top: 10.5%; 
+	left: 7.5%; 
+	width: 19%;
+	z-index: 1; 
+	transition: transform .3s;
+}
+.book1:hover {
+	transform: translateY(-15px);
+}
+.book2 {
+	position: absolute;
+	top: 10.5%; 
+	left: 39.5%; 
+	width: 19%;
+	z-index: 1; 
+	transition: transform .3s;
+}
+.book2:hover {
+	transform: translateY(-15px);
+}
+.book3 {
+	position: absolute;
+	top: 10.5%; 
+	left: 71%; 
+	width: 19%;
+	z-index: 1; 
+	transition: transform .3s;
+}
+.book3:hover {
+	transform: translateY(-15px);
+}
+.book4 {
+	position: absolute;
+	top: 47%; 
+	left: 7.5%; 
+	width: 20.5%;
+	z-index: 1; 
+	transition: transform .3s;
+}
+
+.book4:hover {
+	transform: translateY(-15px);
+}
+
+.book5 {
+	position: absolute;
+	top: 45%; 
+	left: 39%; 
+	width: 20%;
+	z-index: 1; 
+	transition: transform .3s;
+}
+.book5:hover {
+	transform: translateY(-15px);
+}
+.book6 {
+	position: absolute;
+	top: 47%; 
+	left: 68.5%; 
+	width: 20.5%;
+	z-index: 1; 
+	transition: transform .3s;
+}
+.book6:hover {
+	transform: translateY(-15px);
+}
+
+/* ------- END OF BOOK PROPERTIES -------- */
+
+
+
+
+
+/* ------- LOGO -------- */
+.logo {
+	position: fixed;
+	top: 14.3px;
+	float: top;
+	left: 50px;
+	z-index: 999999;
+	width: 150px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+/* ------- END OF LOGO -------- */
+
+
+
+
+/* ------- BUTTON -------- */
+.button {
+	font-size: 30px; 
+	color: white;
+	background-color: #a6d8e8; 
+	text-decoration: none;
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	padding-right: 80px; 
+	padding-left: 80px;
+	border: 0px solid purple;
+	border-radius: 20px;
+	position: fixed;
+	float: right;
+	left: 85%;
+	top: 80px;
+	transition: transform .2s;
+}
+
+.button:hover {
+	background-color: #dbc65d;
+	color: white;
+	transform: scale(1.05);
+}
+/* ------- END OF BUTTON -------- */
+
+
+
+</style>
+</head>
+<body>
+
+<!-- LOGO -->
+	<img src="logo.jpg" class="logo">
+<!-- LOGO -->
+
+
+
+<!-- HEADBAR -->
+	<ul>
+		<li style="float: right;"><a href="#settings">Settings</a></li>
+		<li> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎</li>
+		<li><a href="homepage.html">Home</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="help.html">Help</a></li>
+		<li><a href="#setting"></a></li>
+	</ul>
+<!-- HEADBAR -->
+
+<!-- CONTENT -->
+
+<div class="background">
+	<center>
+
+	<div class="shelf">
+		<img src="b0.png" class="book1"></a>
+		<img src="b0.png" class="book2"></a>
+		<img src="b0.png" class="book3"></a>
+		<a href="desc1.html"><img src="1.png" class="book4"></a>
+		<img src="0.png" class="book5">
+		<img src="3.png" class="book6">
+		<div>
+	<center>
+	
+</div>
+
+<div class="container">
+		<a href="homepage.html" class="button"> Go back <a>
+	<center>
+</div>
+<!-- CONTENT -->
+
+
+</body>
+</html>
